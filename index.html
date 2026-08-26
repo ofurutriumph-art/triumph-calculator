@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triumph Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+ <div id="calculator">
+  <div class="header">
+        <h1>
+            <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+            Triumph Calculator
+        </h1>
+
+    <div class="header-buttons">
+<button
+    id="historyBtn"
+    type="button"
+    aria-label="Show calculation history"
+    aria-expanded="false"
+    aria-controls="history-container"
+>
+    <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+</button>
+
+<button
+    id="themeToggle"
+    type="button"
+    aria-label="Switch to light theme"
+>
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+</button>
+    </div>
+  </div>
+      
+    <label for="display" class="sr-only">Calculator display</label>
+
+    <input
+        id="display"
+        value="0"
+        placeholder="0"
+        readonly
+        aria-live="polite"
+    >
+
+  <div id="keys" role="group" aria-label="Calculator keypad">
+
+     <button type="button" onclick="clearDisplay()" class="operator" aria-label="Clear calculator"><i class="fa-solid fa-trash" aria-hidden="true"></i></button>
+     <button type="button" onclick="deleteLast()" class="operator" aria-label="Delete last character"> <i class="fa-solid fa-delete-left" aria-hidden="true"></i></button>
+     <button type="button" onclick="percentage()">%</button>
+     <button type="button" onclick="appendToDisplay('÷')">÷</button>
+     <button type="button" onclick="appendToDisplay('7')" class="dark-btn">7</button>
+     <button type="button" onclick="appendToDisplay('8')" class="dark-btn">8</button>
+     <button type="button" onclick="appendToDisplay('9')" class="dark-btn">9</button>
+     <button type="button" onclick="appendToDisplay('×')">×</button>
+     <button type="button" onclick="appendToDisplay('4')" class="dark-btn">4</button>
+     <button type="button" onclick="appendToDisplay('5')" class="dark-btn">5</button>
+     <button type="button" onclick="appendToDisplay('6')" class="dark-btn">6</button>
+     <button type="button" onclick="appendToDisplay('-')">-</button>
+     <button type="button" onclick="appendToDisplay('1')" class="dark-btn">1</button>
+     <button type="button" onclick="appendToDisplay('2')" class="dark-btn">2</button>
+     <button type="button" onclick="appendToDisplay('3')" class="dark-btn">3</button>
+     <button type="button" onclick="appendToDisplay('+')">+</button>
+     <button type="button" onclick="appendToDisplay('0')"  class="zero-btn">0</button>
+     <button type="button" onclick="appendToDisplay('.')" class="dark-btn">.</button>
+     <button type="button" onclick="calculate()" class="equal-btn" aria-label="Calculate result"><i class="fa-solid fa-equals" aria-hidden="true"></i></button>
+  
+    </div>
+
+<section
+    id="history-container"
+    class="history-container"
+    aria-labelledby="history-title"
+>
+
+    <div class="history-header">
+        <h3 id="history-title">History</h3>
+
+        <button id="clearHistoryBtn" type="button">
+            <i class="fa-solid fa-trash" aria-hidden="true"></i>
+            Clear
+        </button>
+    </div>
+
+    <ul id="historyList"></ul>
+</section>
+
+ </div>
+
+</main>
+
+
+<footer>
+    <p>Built by Triumph Ofuru &copy; 2026</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
