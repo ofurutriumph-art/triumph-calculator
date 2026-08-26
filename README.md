@@ -1,10 +1,10 @@
 # Triumph Calculator 🧮
 
-A modern, responsive calculator web application built with HTML, CSS, and JavaScript.
+A modern, responsive calculator built with HTML, CSS, and JavaScript. This project demonstrates fundamental JavaScript logic, DOM manipulation, event handling, and responsive web design.
 
 ## 🚀 Live Demo
 
-Coming soon...
+[View Live Calculator](https://ofurutriumph-art.github.io/triumph-calculator/)
 
 ## 📸 Preview
 
@@ -73,16 +73,21 @@ While building this project, I practiced:
 - Arrays
 - LocalStorage
 - Error handling
+- Mathematical operations
+- User input handling
 - Responsive design
 - CSS variables
 - Theme switching
 - Accessibility basics
+- GitHub Pages deployment
 
 ## 👨‍💻 Author
 
 **Triumph Ofuru**
 
 Front-End Developer
+
+Built with HTML, CSS & JavaScript.
 
 ## 📄 License
 
