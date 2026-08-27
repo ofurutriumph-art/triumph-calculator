@@ -8,7 +8,7 @@ A modern, responsive calculator built with HTML, CSS, and JavaScript. This proje
 
 ## 📸 Preview
 
-Coming soon...
+![Triumph Calculator Preview](assets/images/triumph-calculator.png)
 
 ## ✨ Features
 
